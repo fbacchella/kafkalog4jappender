@@ -10,7 +10,18 @@ To install it, just run `mvn package` and add target/kafkalog4jappender.jar to y
 Many options can be changed :
 
  * The options tied to Kafka are
-
+   * brokerList
+   * topic
+   * compressionType
+   * securityProtocol
+   * sslTruststoreLocation
+   * sslTruststorePassword
+   * sslKeystoreType
+   * sslKeystoreLocation
+   * sslKeystorePassword
+   * saslKerberosServiceName
+   * clientJaasConfPath
+   * kerb5ConfPath
  * common options are
    * hostname: it will be added as a `hostname` property, default to the value of `java.net.InetAddress.getLocalHost().getHostName()`.
    * locationInfo: true of false, it will send or not the log event location (file, line, method), default to false.
